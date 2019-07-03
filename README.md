@@ -1,5 +1,4 @@
 # app-store-iOS-iconset-generator
-iOS iconset generator
 
 genimsgiconset.sh - iMessage iconset generator
 
