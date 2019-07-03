@@ -1,5 +1,5 @@
-# app-store-iOS-iconset-generator
-
-genimsgiconset.sh - iMessage iconset generator
+# App Store iconset generator
 
 geniconset.sh - iOS app iconset generator
+
+genimsgiconset.sh - iMessage iconset generator
