@@ -56,17 +56,35 @@ genicon () {
 				createicon $1 167 167
 		            ;;
 			iPadMiniIcon@2x.png)
-				createicon $1 152 152
+				createicon $1 144 144
 		            ;;
+			iPadMiniIcon.png)
+				createicon $1 72 72
+					;;
+			iPadMini7Icon@2x.png)
+				createicon $1 152 152
+					;;
+			iPadMini7Icon.png)
+				createicon $1 76 76
+					;;
 			iPhoneSpotlightIcon@3x.png)
 				createicon $1 120 120
 		            ;;
 			iPhoneSpotlightIcon@2x.png)
 				createicon $1 80 80
 		            ;;
-			iPadSpotlightIcon@2x.png)
+			iPadSpotlight7Icon@2x.png)
 				createicon $1 80 80
 		            ;;
+			iPadSpotlight7Icon.png)
+				createicon $1 40 40
+					;;
+			iPadSpotlightIcon@2x.png)
+				createicon $1 100 100
+					;;
+			iPadSpotlightIcon.png)
+				createicon $1 50 50
+					;;
 			iPhoneSettingIcon@3x.png)
 				createicon $1 87 87
 		            ;;
@@ -76,6 +94,9 @@ genicon () {
 			iPadSettingIcon@2x.png)
 				createicon $1 58 58
 		            ;;
+			iPadSettingIcon.png)
+				createicon $1 29 29
+					;;
 			iPhoneNotificationIcon@3x.png)
 				createicon $1 60 60
 		            ;;
@@ -85,7 +106,10 @@ genicon () {
 			iPadNotificationIcon@2x.png)
 				createicon $1 40 40
 		            ;;
-		        *)
+			iPadNotificationIcon.png)
+				createicon $1 20 20
+					;;
+				*)
 		            echo "Sorry! No portfolio found. [$1]"
 		            exit 1
 	         esac
@@ -118,15 +142,23 @@ if [ $# -eq 0 ]; then
 	genicon iPhoneIcon@2x.png
 	genicon iPadProIcon@2x.png
 	genicon iPadMiniIcon@2x.png
+	genicon iPadMiniIcon.png
+	genicon iPadMini7Icon@2x.png
+	genicon iPadMini7Icon.png
 	genicon iPhoneSpotlightIcon@3x.png
 	genicon iPhoneSpotlightIcon@2x.png
+	genicon iPadSpotlight7Icon.png
+	genicon iPadSpotlight7Icon@2x.png
+	genicon iPadSpotlightIcon.png
 	genicon iPadSpotlightIcon@2x.png
 	genicon iPhoneSettingIcon@3x.png
 	genicon iPhoneSettingIcon@2x.png
 	genicon iPadSettingIcon@2x.png
+	genicon iPadSettingIcon.png
 	genicon iPhoneNotificationIcon@3x.png
 	genicon iPhoneNotificationIcon@2x.png
 	genicon iPadNotificationIcon@2x.png
+	genicon iPadNotificationIcon.png
 
         today=$(date +"%Y%m%d")
 #        if [[ $1 == *"."* ]]; then
@@ -137,3 +169,4 @@ if [ $# -eq 0 ]; then
 else
         echo $0$': illegal option\nusage: geniconset.sh'
 fi
+
